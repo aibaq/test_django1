@@ -1,0 +1,11 @@
+from . import common
+from . import install
+
+from fabric.state import env
+
+env.repository = "$$$PROJECT_REPO$$$"
+env.repository_ssh = "$$$PROJECT_SSH_REPO$$$"
+env.repo_name = "$$$PROJECT_NAME$$$"
+env.user = "ubuntu"
+env.key_filename = "~/$$$PROJECT_NAME$$$.pem"
+env.hosts = [""]
